@@ -1,0 +1,22 @@
+<div>
+    <input name="num1" type="number" [(ngModel)]="num1" placeholder="Side A...">
+    <input name="num2" type="number" [(ngModel)]="num2" placeholder="Side B...">
+</div>
+
+<div>
+    <h4>Square calculations</h4>
+    <button (click)='areaSquare()'>Square - Calculate Area</button>
+    <button (click)='circumferenceSquare()'>Square - Calculate Circumference</button>
+</div>
+
+<div>
+    <h4>Rectangle calculations</h4>
+    <button (click)='areaRectangle()'>Rectangle - Calculate Area</button>
+    <button (click)='circumferenceRectangle()'>Rectangle - Calculate Circumference</button>
+</div>
+
+<div>
+    <h2>Your result:</h2>
+    <h2>{{resultMessage}}</h2>
+    <h2>{{result}}</h2>
+</div>
